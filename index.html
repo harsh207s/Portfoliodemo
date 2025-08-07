@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harshu Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-image: url(gt.jpg);
+      line-height: 1.6;
+    }
+    .main-img {
+        padding-left: 0%;
+        padding-right: 0%;
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #1d9c4d;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #00e5ff;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #00e5ff;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .hero img {
+      width: 200px;
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #00e5ff;
+    }
+
+    .typed-text {
+      color: #00e5ff;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.2rem;
+      background: #00e5ff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .about,
+    .services,
+    .contact {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .service-card {
+      background: #b80f0f;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .service-card i {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #00e5ff;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 1rem;
+      background: #4d5ce1;
+    }
+
+    @media (min-width: 768px) {
+      .hero {
+        flex-direction: row;
+        text-align: left;
+      }
+
+      .hero img {
+        margin-right: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="Harsh Vardhan Singh.pdf" target="_blank">Resume</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="hero">
+    <div>
+      <h2>Hello, I'm</h2>
+      <h1>Harsh Vardhan Singh</h1>
+      <h3>I'm a <span class="typed-text"></span></h3>
+      <p>Frontend Developer skilled in HTML, CSS, JavaScript, and React.</p>
+      <a href="Harsh Vardhan Singh.pdf" download class="btn">Download Resume</a>
+    </div>
+    <img id="main-img" src="Harsh.jpg" alt="Harsh">
+  </section>
+
+  <section id="about" class="about">
+    <h2>About <span>Me</span></h2>
+    <p>Creative and detail-oriented Front-End Developer with experience in React, HTML, CSS, and JavaScript. I build responsive, user-friendly websites and web apps.</p>
+  </section>
+
+  <section id="services" class="services">
+    <h2>My <span>Services</span></h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <i class="ri-code-line"></i>
+        <h3>Web Development</h3>
+        <p>Building responsive websites using HTML, CSS, JS, React, and MongoDB.</p>
+      </div>
+      <div class="service-card">
+        <i class="ri-palette-line"></i>
+        <h3>UI/UX Design</h3>
+        <p>Designing user-friendly interfaces with Figma, XD, and Sketch.</p>
+      </div>
+      <div class="service-card">
+        <i class="ri-android-fill"></i>
+        <h3>App Development</h3>
+        <p>Creating Android apps using Flutter, Java, and Dart.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact <span>Me</span></h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="tel" placeholder="Phone Number">
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>Made with <span>&hearts;</span> by Harsh Vardhan Singh &copy; 2025</p>
+  </footer>
+
+  <script>
+    const typed = new Typed(".typed-text", {
+      strings: ["Frontend Developer", "React Developer", "UI/UX Designer"],
+      typeSpeed: 100,
+      backSpeed: 50,
+      loop: true
+    });
+  </script>
+</body>
+
+</html>

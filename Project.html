@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(226, 212, 212);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.lo{
+    color: rgb(159, 21, 90);
+}
+.projects h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.project img {
+    width: 100px;
+    height: auto;
+}
+
+.project h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.project p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.bx bxl-github{
+    color: black;
+}
+    </style>
+</head>
+<body>
+    <div class="projects">
+        <h1 class="lo"><marquee>My Projects</marquee></h1>
+        <div class="project-container">
+            <div class="project">
+                <img src="netflix-logo.png" alt="Netflix Clone">
+                <h2>Netflix Clone</h2>
+                <p>Developed a Netflix clone using HTML, CSS, and React.js to make a front page and integrate JavaScript for interactivity.
+                </p>
+            </div>
+            <div class="project">
+                <img src="flipkart-logo.png" alt="Flipkart Clone">
+                <h2>Flipkart Clone</h2>
+                <p>Created a Flipkart clone with e-commerce functionality, utilizing Django for backend development and MySQL for database management.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
